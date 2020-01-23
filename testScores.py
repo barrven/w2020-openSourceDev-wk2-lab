@@ -11,7 +11,7 @@ testScore = 0
 while True:
     testScore = int(input('Enter a test score (0-100, 999 to quit): '))
     if testScore >= 0 and testScore <=100:
-        scoreTotal +=testScore
+        scoreTotal += testScore
         counter += 1
     elif testScore == 999:
         break
@@ -20,3 +20,4 @@ while True:
 averageScore = round(scoreTotal / counter)
 print('=====================================================================')
 print('Total score: ', scoreTotal, '\tAverage score: ', averageScore)
+ 
