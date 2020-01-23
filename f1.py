@@ -3,7 +3,7 @@
 # display program title
 print('Invoice Calc Program')
 # get user input for the customer type and the invoice total
-customerType = input('enter customer type: (r/w)')
+customerType = input('enter customer type: (r/w) ')
 invoiceTotal = float(input('Enter the invoice total: '))
 # determine the discount based on the customer type
 # calc discount for retail customers
@@ -28,3 +28,7 @@ discountAmount = round((invoiceTotal*discount), 2)
 newInvoiceTotal = invoiceTotal - discountAmount
 
 # print the results
+print('results for customer type ' + customerType + ' for invoice amount $' + str(invoiceTotal) + ':')
+print('Discount percentage: ' + str(discount*100) + '%')
+print('Discount amount: $' + str(discountAmount))
+print('New invoice total: $' + str(newInvoiceTotal))
